@@ -7,7 +7,7 @@ body {
     font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
     color: white;
     margin: auto;
-    width: 80vw;   
+    width: 75vw;   
     border: 0.1vw white solid;
 }
 
@@ -16,7 +16,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 5;
-    width: 80vw;    
+    width: 75vw;    
     height: auto;
     border-bottom: 0.1vw white solid;
 }
@@ -42,29 +42,35 @@ header {
 #menutopheader {
     display: flex;
     flex-direction: column;
-    height: 17vh;
+    justify-content: space-around;
+    margin-bottom: 1vh;
+    height: 15vh;
 }
 
 #menutopheader h1 {
-    /* Avellino */ 
-    font-family: 'Oleo Script Swash Caps', cursive;
+    /* Avellino */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.1em;
+    margin-bottom: 1vh;
+    font-size: 5vw;
+    font-variant-caps: all-small-caps;
     text-align: center;
-    font-size: 9vh;
 }
 
 #menutopheader h2 {
     /* Helado Artesanal Natural */
+   /*  margin-bottom: 3vh;   */  
     text-transform: capitalize;
-    letter-spacing: 0.25vw;
+    letter-spacing: 0.2em;
     font-style: italic;
     text-align: center;
     font-weight: bold;
-    font-size: 1.25vw;
+    font-size: 3.4vw;
+    font-size: 100%;
 }
 
 nav {
-    height: 6vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -72,14 +78,16 @@ nav {
 }
 
 nav ul {
-    line-height: 5vh;
     font-variant: small-caps;
+    text-align: center;    
 }
 
 nav ul a {  
+    text-align: center;
     text-decoration: none;
     color:white;
-    font-size: 1.4vw;
+    font-size: 50%;
+    font-weight: 100;
 }
 
 main {
@@ -89,17 +97,15 @@ main {
 main section{
     scroll-margin-top: 22.35vh;
     padding-left: 2vw;
-    padding-top: 5vh;
 }
 
 #Seccion1 {
-    background-image: url(../Images/Fondo_avellino.jpg);
+    background-image: url(../Images/IMG-0110.PNG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 76.5vh;
     width: 100%;
-    padding-top: 0;
     padding-left: 0;
 }
 
@@ -119,26 +125,28 @@ main section{
 
 #quienessomos h1 {
     text-align: center;
+    font-size: 2.2vw; 
 }
 
 #quienessomos p {
-    font-size: 1.5vw;
+    font-size: 2vw;
     color:white;
+    padding-top: 2.2vh;
     padding-left: 1.5vw;    
     padding-right: 1.5vw;
     text-align: left;
-    line-height: 5vh;
+    line-height: 3.6vh;
     -webkit-text-stroke: 0.2px black ;
     opacity: 1;
 }
 
 main section h1 {
-    -webkit-text-stroke: 0.1vh  rgb(179, 105, 34);
+    -webkit-text-stroke: 1.5px  rgb(179, 105, 34) ;
+    /*:rgb(179, 105, 34)*/
     text-transform: uppercase;
-    color:rgb(255, 183, 27);
-    font-weight: 700;
-    font-size: 2.5vw;
-    margin-bottom: 2.2vh;
+    color:rgb(255, 183, 27) ;
+    font-weight: 900;
+    font-size: 2.3em;
 }
 
 main section p {
@@ -212,7 +220,6 @@ main section :last-child{
     width: 95%;
     height: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
     line-height: 100%;}
 
 #consultas textarea{
@@ -232,3 +239,34 @@ footer {
 footer p {
     text-align: center;
     font-size: 12px;}
+
+/* 
+@media (max-width:1020px){
+
+    #logo {
+        width: 100%;
+    }
+    #menu h1 {
+        font-size: 100%;
+    }
+    #menu h2 {
+        font-size: 60%;
+    }
+    #menu nav {
+        display: flex;
+        flex-direction: column;
+        font-size: 60%;
+    }
+    #menu nav ul {
+        border: 1px white solid;
+    }
+
+    #menu nav ul a {
+        display: block;
+    }
+
+    main section{
+        padding-top:40%;
+    }
+}
+ */
