@@ -7,7 +7,7 @@ body {
     font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
     color: white;
     margin: auto;
-    width: 80vw;   
+    width: 90vw;   
     border: 0.1vw white solid;
 }
 
@@ -16,7 +16,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 5;
-    width: 80vw;    
+    width: 90vw;    
     height: auto;
     border-bottom: 0.1vw white solid;
 }
@@ -84,6 +84,7 @@ nav ul a {
 
 main {
     margin-top: 22.35vh;
+    background-color: rgb(91, 52, 39); 
 }
 
 main section{
@@ -92,6 +93,26 @@ main section{
     padding-top: 5vh;
 }
 
+main section h1 {
+    -webkit-text-stroke: 0.1vh  rgb(179, 105, 34);
+    text-transform: uppercase;
+    color:rgb(255, 183, 27);
+    font-weight: 700;
+    font-size: 2.5vw;
+    margin-bottom: 2.2vh;
+}
+
+main section p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+.boxBottomTittle {
+    padding-left: 1vw;
+    margin-right: 3vw;
+}
+
+/* NOSOTROS - Seccion 1 */
 #Seccion1 {
     background-image: url(../Images/Fondo_avellino.jpg);
     background-position: center;
@@ -132,103 +153,72 @@ main section{
     opacity: 1;
 }
 
-main section h1 {
-    -webkit-text-stroke: 0.1vh  rgb(179, 105, 34);
-    text-transform: uppercase;
-    color:rgb(255, 183, 27);
-    font-weight: 700;
-    font-size: 2.5vw;
-    margin-bottom: 2.2vh;
+
+/* PRODUCTOS - SECCION 2 */
+.sabores {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
 }
 
-main section p {
-    font-size: 1.2em;
-    line-height: 1.7em;
-}
+.sabores div {
+    margin-bottom: 3vh;}
 
-main section :last-child{
-    margin-bottom: 1%;
-}
+.sabores h1 {
+    margin-top: 1.5vh;}
 
+/* GALERIA DE FOTOS - SECCION 3 */
 #gallery {
     display: grid;
-    grid-template-columns: auto auto auto;
-}
+    grid-template-columns: auto auto auto;}
 
 .grid-item img{
     width: 90%;
-    height: 90%;
-}
+    height: 90%;}
+
+/* CONTACTO  - SECCION 4 */
+main section:last-child {
+    height: auto}
+
+main section:last-child h1 {
+    margin-bottom: 6vh;}
 
 .datoscontacto {
-    display:flex;
-    justify-content: flex-start;
-    margin-top: 1%;}
+    display: grid;
+    grid-template-columns: 35% 65%;}
+
+.datoscontacto div{
+    border: 1px solid white;}
 
 .datoscontacto a{
     text-decoration: none;
     color: white;}
     
-.contactoheladeria {
-    padding-left: 5%;
-    padding-right:3%;
-    padding-top: 2%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 23%;
-    margin-bottom: 8%;
-}
-.contactoheladeria h2{
-    padding-top: 5%;
-    color:rgb(70, 46, 39);
-    font-weight: 900;
-    text-transform: uppercase;}
-
-.contactoheladeria p{
-    padding-top:3%;
-    font-size: 1em;}
-
-#imagengooglemaps {
-    padding-top: 2%;
-    width: 65%;
-    height: 30em;
-}
-
-#imagengooglemaps h2, #consultas h2 {
-    margin-bottom: 6%;}
+.datoscontacto p{
+    word-wrap: break-word;}
 
 #imagengooglemaps iframe {
-    height: 75%;
+    height: 58vh;
     width: 100%;}
 
-.contactoheladeria h2 {
-    margin-top: 10%;}
+/* Direccion */
+.direccion h2, .consultas h2 {
+    font-size: 2.5vw;
+    color:rgb(255, 183, 27);    
+    text-transform: uppercase;
+    margin-bottom: 1.5vh;
+    margin-top: 3vh;}
 
-.telefono h2 {
-    margin-top: 0;}
+.direccion p, a {
+    font-size: 1.5vw;}
 
-#consultas input{
-    width: 95%;
-    height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
-    line-height: 100%;}
-
-#consultas textarea{
-    border-width: 2px;
-    width: 95%;
-    height: 200px;
-    font-family: Arial, Helvetica, sans-serif;}
-
-#enviar submit {
-    width: 50px;
-    height: 20px;}
-
+/* FOOTER  - PIE */
 footer {
-    padding-top: 10%;
-    padding-bottom: 3%;}
+    padding-top: 15vh;
+    padding-bottom: 2vh;
+    background-color:rgb(91, 52, 39);}
 
 footer p {
-    text-align: center;
-    font-size: 12px;}
+    text-align: center;}
