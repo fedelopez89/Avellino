@@ -4,10 +4,11 @@
 
 body {
     background-color:rgb(179, 105, 34);
+    background-color:rgb(250, 237, 164);
     font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
     color: white;
     margin: auto;
-    width: 90vw;   
+    width: 95vw;   
     border: 0.1vw white solid;
 }
 
@@ -16,7 +17,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 5;
-    width: 90vw;    
+    width: 95vw;    
     height: auto;
     border-bottom: 0.1vw white solid;
 }
@@ -100,9 +101,11 @@ main section h1 {
     font-weight: 700;
     font-size: 2.5vw;
     margin-bottom: 2.2vh;
+    padding-left: 2vw;
 }
 
 main section p {
+    padding-left: 2vw;
     font-size: 1.2em;
     line-height: 1.7em;
 }
@@ -118,7 +121,7 @@ main section p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 76.5vh;
+    height: 77vh;
     width: 100%;
     padding-top: 0;
     padding-left: 0;
@@ -140,6 +143,7 @@ main section p {
 
 #quienessomos h1 {
     text-align: center;
+    padding-left: 0;
 }
 
 #quienessomos p {
@@ -153,8 +157,13 @@ main section p {
     opacity: 1;
 }
 
-
 /* PRODUCTOS - SECCION 2 */
+#Seccion2, #Seccion3 {
+    text-align: center;
+    font-size: 1.3vw;
+    line-height: 6vh;
+}
+
 .sabores {
     margin-top: 3vh;
     margin-bottom: 3vh;
@@ -164,15 +173,31 @@ main section p {
 }
 
 .sabores div {
-    margin-bottom: 3vh;}
+    border-radius: 10%;
+    background-color:rgb(179, 105, 34);
+    margin-bottom: 3vh;
+    margin: 2vh 3.5vw;
+    height: auto;
+    padding-bottom: 4vh;
+}
+
+.sabores div ul {
+    text-align: center;
+    line-height: 3.7vh;
+    font-size: bold;
+}
 
 .sabores h1 {
-    margin-top: 1.5vh;}
+    margin-top: 1.5vh;
+    padding-left: 0;}
 
 /* GALERIA DE FOTOS - SECCION 3 */
 #gallery {
     display: grid;
-    grid-template-columns: auto auto auto;}
+    padding-top: 6vh;
+    padding-left: 7.7vw;
+    grid-template-columns: 25vw 25vw 25vw;}
+    
 
 .grid-item img{
     width: 90%;
@@ -182,43 +207,103 @@ main section p {
 main section:last-child {
     height: auto}
 
-main section:last-child h1 {
-    margin-bottom: 6vh;}
-
 .datoscontacto {
     display: grid;
-    grid-template-columns: 35% 65%;}
-
-.datoscontacto div{
-    border: 1px solid white;}
+    grid-template-columns: 35% 70%;}
 
 .datoscontacto a{
     text-decoration: none;
     color: white;}
     
 .datoscontacto p{
+    padding-left: 0;
     word-wrap: break-word;}
 
+#imagengooglemaps {
+    margin-top: -7vh;
+}
+
 #imagengooglemaps iframe {
-    height: 58vh;
-    width: 100%;}
+    height: 68vh;
+    width: 90%;}
 
 /* Direccion */
-.direccion h2, .consultas h2 {
-    font-size: 2.5vw;
+.direccion {
+    padding-left: 2.5vw;
+}
+
+.direccion h2, .formulario h2 {
+    font-size: 1.9vw;
     color:rgb(255, 183, 27);    
     text-transform: uppercase;
     margin-bottom: 1.5vh;
-    margin-top: 3vh;}
+    margin-top: 3vh;
+    padding-top: 3vh;}
 
 .direccion p, a {
-    font-size: 1.5vw;}
+    font-size: 1.25vw;
+}
+
+/* TELEFONO */
+#telefono::before {
+    content: '.';
+    background: url('../Images/icon_phone.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+/* Formulario */
+.formulario {
+    padding-left: 1.5vw;
+}
+
+form{
+    margin-left: 0.8vh;
+    margin-top: 5vh;
+	width: 40vw;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width: 13.8vw;
+    height: 3.5vh;
+	padding: 1vh;
+	border: 1px solid #f6f6f6;
+	background-color:#f6f6f6;
+    margin-right: 1.5vw;
+    margin-bottom: 1.8vh;
+	display:inline-block;
+}
+
+textarea{
+	width: 31.5vw;
+	height: 20vh;
+	border: 1px solid #f6f6f6;
+	background-color: #f6f6f6;	
+	resize: none;
+	display: block;
+}
+
+form input[type="submit"]{
+	width: 10vw;
+    height: 3.5vh;
+	padding: 8px;
+	border: 1px solid #000;
+	display: block;
+	color: #fff;
+	background-color: #000;
+} 
+
+form input[type="submit"]:hover{
+	cursor: pointer;
+}
 
 /* FOOTER  - PIE */
 footer {
     padding-top: 15vh;
     padding-bottom: 2vh;
-    background-color:rgb(91, 52, 39);}
+    background-color: rgb(91, 52, 39);}
 
 footer p {
     text-align: center;}

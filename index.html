@@ -52,12 +52,12 @@
                     </div>
                 </div>
             </section>
-            <hr>
             <!-- PRODUCTOS -->
             <section id="Seccion2">
                 <h1>productos</h1>
                 <div class="boxBottomTittle">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur aut consequuntur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur aut consequuntur.
+                    </p>
                     <div class="sabores">
                         <div id="sabor1">
                             <h1>sabor1</h1>
@@ -93,7 +93,7 @@
                             <ul>Mascarpone con Frutos</ul>
                         </div>
                         <div id="sabor4">
-                            <h1>sabor4</h1>
+                            <h1>Dulce de Leche</h1>
                             <ul>Dulce de Leche</ul>
                             <ul>Dulce de Leche Granizado</ul>
                             <ul>Dulce de Leche con Nuez</ul>
@@ -101,9 +101,10 @@
                             <ul>Dulce de Leche Nocciola</ul>
                             <ul>Dulce de Leche Avellino</ul>
                             <ul>Chocotorta</ul>
+                            <ul>Coco con Dulce de Leche</ul>
                         </div>
                         <div id="sabor5">
-                            <h1>sabor5</h1>
+                            <h1>Frutales</h1>
                             <ul>Limón</ul>
                             <ul>Ananá</ul>
                             <ul>Frutilla</ul>
@@ -111,9 +112,10 @@
                             <ul>Melón</ul>
                             <ul>Frambuesa</ul>
                             <ul>Mousse de Limón</ul>
+                            <ul>Pomelo</ul>
                         </div>
                         <div id="sabor6">
-                            <h1>sabor6</h1>
+                            <h1>Chocolates</h1>
                             <ul>Chocolate</ul>
                             <ul>Chocolate con Almendras</ul>
                             <ul>Chocolate Selva Negra</ul>
@@ -126,11 +128,10 @@
                     </div>
                 </div>
             </section>
-            <hr>
             </section>
             <!-- GALERIA DE FOTOS -->
             <section id="Seccion3">
-                <h1>galeria</h1>
+                <h1>galeria de fotos</h1>
                 <div class="boxBottomTittle">
                     <div id="gallery">
                         <div class="grid-item">
@@ -163,42 +164,44 @@
                     </div>
                 </div>
             </section>
-            <hr>
             <!-- CONTACTO -->
             <section id="Seccion4">
                 <h1>contacto</h1>
                 <div class="boxBottomTittle">
                     <div class="datoscontacto">
                         <div class="direccion">
-                            <h2>teléfono</h2>
+                            <h2 id="telefono">teléfono</h2>
                             <p>(011) 4123-4567</p>
                             <h2>email</h2>
                             <a href="mailto:avellinohelados@gmail.com">avellinohelados@gmail.com</a>
                             <h2>dirección</h2>
                             <p>Félix de Azara 852, Lomas de Zamora.</p>
                             <p>Buenos Aires, ARG.</p>
-                        </div>
-                        <div class="consultas">
-                            <h2>consultas</h2>
-                            <form action="php/enviar.php" method="POST" autocomplete="off">
-                                <input type="text" required placeholder="Nombre" size="80vw">
-                                <br><br>
-                                <input type="email" required placeholder="Email">
-                                <br><br>
-                                <input type="text" required name="Localidad" placeholder="Localidad" size="32">
-                                <br><br>
-                                <textarea name="mensaje" required id="mensaje" cols="30" rows="10" required="required"
-                                placeholder="Mensaje"></textarea>
-                                <br><br>
-                                <input type="submit" value="ENVIAR" id="enviar">
-                            </form>
-                        </div>
+                        </div>                        
                         <div id="imagengooglemaps">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.235152869861!2d-58.40562648518994!3d-34.749668772741344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd29b0f2d839b%3A0xd20f81c921bb0983!2sAvellino%20helados!5e0!3m2!1ses!2sar!4v1603660551105!5m2!1ses!2sar"
                                 frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                                 tabindex="0"></iframe>
                         </div>
+                    </div>
+                    <div class="formulario">
+                        <h2>consultas</h2>
+                        <form action="php/enviar.php" method="POST" autocomplete="off">
+                            <div class="input">
+                                <input type="text" required placeholder="Nombre (*)">
+                                <input type="email" required placeholder="Email (*)">
+                                <br><br>
+                                <input type="text" name="Teléfono" placeholder="Teléfono">
+
+                                <input type="text" required name="Localidad" placeholder="Localidad (*)">
+                                <br><br>
+                                <textarea name="mensaje" required id="mensaje"
+                                    required="required" placeholder="Mensaje (*)"></textarea>
+                                <br><br>
+                                <input type="submit" value="ENVIAR" id="enviar">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
