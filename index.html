@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Avellino Helados</title>
+
+    <!-- LightGallery -->
+    <link type="text/css" rel="stylesheet" href="css/lightGallery.css" />
+
     <!-- Fuente Google Fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
     </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.jpg">
+
     <!-- Escritorios muy grandes -->
-    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
     <!-- Tablets en horizontal y escritorios normales -->
     <!--     <link rel="stylesheet" media="(max-width: 768px and max-width: 1199px)" href="CSS/styleDos.css" />
  -->
@@ -20,47 +29,41 @@
     <!-- Móviles en vertical -->
     <!--     <link rel="stylesheet" media="(max-width: 480px)" href="CSS/styleCuatro.css" />
  -->
+
 </head>
 
-<body style="height: 100%;">
+<body>
     <div id=general>
         <header>
-            <div class="menuppal">
-                <div id="logo" style="background-image: url(Images/imagen_logo.jpg);"><a href="#Seccion1"></a></div>
-                <div id="menu">
-                    <div id="menutopheader">
-                        <h1>Avellino</h1>
-                        <h2>helado artesanal natural</h2>
-                    </div>
-                    <nav>
-                        <ul><a href="#Seccion1">nosotros</a></ul>
-                        <ul><a href="#Seccion2">productos</a></ul>
-                        <ul><a href="#Seccion3">galeria de fotos</a></ul>
-                        <ul><a href="#Seccion4">contacto</a></ul>
-                    </nav>
-                </div>
+            <div id="topHeader">
+            </div>
+            <div id="bottomHeader">
+                <nav>
+                    <ul><a href="#section1">nosotros</a></ul>
+                    <ul><a href="#section2">productos</a></ul>
+                    <ul><a href="#section3">galeria de fotos</a></ul>
+                    <ul><a href="#section4">contacto</a></ul>
+                </nav>
             </div>
         </header>
         <main>
             <!-- NOSOTROS -->
-            <section id="Seccion1">
-                <div id="prequienessomos">
-                    <div id="quienessomos">
-                        <h1>nosotros</h1>
-                        <p> Avellino, es una heladería familiar y artesanal de elaboración propia, que cuenta con amplia
-                            trayectoria en el rubro alimenticio. </p>
-                    </div>
+            <section id="section1">
+                <div id="aboutUs">
+                    <h1>nosotros</h1>
+                    <p> Avellino es una heladería familiar y artesanal de elaboración propia que cuenta con amplia
+                        trayectoria en el rubro alimenticio. </p>
                 </div>
             </section>
             <!-- PRODUCTOS -->
-            <section id="Seccion2">
+            <section id="section2">
                 <h1>productos</h1>
                 <div class="boxBottomTittle">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur aut consequuntur.
                     </p>
                     <div class="sabores">
                         <div id="sabor1">
-                            <h1>sabor1</h1>
+                            <h2>sabor1</h2>
                             <ul>Kinder</ul>
                             <ul>Bombón Rocher</ul>
                             <ul>Mantecol</ul>
@@ -70,7 +73,7 @@
                             <ul>Mousse de Maracuyá</ul>
                         </div>
                         <div id="sabor2">
-                            <h1>sabor2</h1>
+                            <h2>sabor2</h2>
                             <ul>Americana</ul>
                             <ul>Granizado</ul>
                             <ul>Tramontana</ul>
@@ -82,7 +85,7 @@
 
                         </div>
                         <div id="sabor3">
-                            <h1>sabor3</h1>
+                            <h2>sabor3</h2>
                             <ul>Banana</ul>
                             <ul>Banana Split</ul>
                             <ul>Cereza a la Crema</ul>
@@ -93,7 +96,7 @@
                             <ul>Mascarpone con Frutos</ul>
                         </div>
                         <div id="sabor4">
-                            <h1>Dulce de Leche</h1>
+                            <h2>Dulce de Leche</h2>
                             <ul>Dulce de Leche</ul>
                             <ul>Dulce de Leche Granizado</ul>
                             <ul>Dulce de Leche con Nuez</ul>
@@ -104,7 +107,7 @@
                             <ul>Coco con Dulce de Leche</ul>
                         </div>
                         <div id="sabor5">
-                            <h1>Frutales</h1>
+                            <h2>Frutales</h2>
                             <ul>Limón</ul>
                             <ul>Ananá</ul>
                             <ul>Frutilla</ul>
@@ -115,7 +118,7 @@
                             <ul>Pomelo</ul>
                         </div>
                         <div id="sabor6">
-                            <h1>Chocolates</h1>
+                            <h2>Chocolates</h2>
                             <ul>Chocolate</ul>
                             <ul>Chocolate con Almendras</ul>
                             <ul>Chocolate Selva Negra</ul>
@@ -130,78 +133,77 @@
             </section>
             </section>
             <!-- GALERIA DE FOTOS -->
-            <section id="Seccion3">
+            <section id="section3">
                 <h1>galeria de fotos</h1>
                 <div class="boxBottomTittle">
                     <div id="gallery">
-                        <div class="grid-item">
-                            <img src="Images/IMG-0109.PNG" alt="">
+                        <div class="grid-item" data-src="Images/IMG-0109.PNG">
+                            <img src="Images/IMG-0109.PNG" alt="Alfajor Helado">
                         </div>
-                        <div class="grid-item">
-                            <img src="Images/IMG-0110.PNG" alt="">
+                        <div class="grid-item" data-src="Images/IMG-0110.PNG">
+                            <img src="Images/IMG-0110.PNG" alt="Alfajor Helado">
                         </div>
-                        <div class="grid-item">
-                            <img src="Images/IMG-0111.PNG" alt="">
+                        <div class="grid-item" data-src="Images/IMG-0111.PNG">
+                            <img src="Images/IMG-0111.PNG" alt="Bombon Suizo">
                         </div>
-                        <div class="grid-item">
-                            <img src="Images/IMG-0112.PNG" alt="">
+                        <div class="grid-item" data-src="Images/IMG-0112.PNG">
+                            <img src="Images/IMG-0112.PNG" alt="Alfajor Helado Chocolate Blanco">
                         </div>
-                        <div class="grid-item">
-                            <img src="Images/IMG-0113.PNG" alt="">
+                        <div class="grid-item" data-src="Images/IMG-0113.PNG">
+                            <img src="Images/IMG-0113.PNG" alt="Potes de helados">
                         </div>
-                        <div class="grid-item">
-                            <img src="Images/IMG-0114.PNG" alt="">
+                        <div class="grid-item" data-src="Images/IMG-0114.PNG">
+                            <img src="Images/IMG-0114.PNG" alt="Helado de Dulce de Leche">
                         </div>
-                        <div class="grid-item">
-                            <img src="Images/IMG-0115.PNG" alt="">
+                        <div class="grid-item" data-src="Images/IMG-0115.PNG">
+                            <img src="Images/IMG-0115.PNG" alt="Helado de DDL bañado con Chocolate">
                         </div>
-                        <div class="grid-item">
-                            <img src="Images/IMG-0116.PNG" alt="">
-                        </div>
-                        <div class="grid-item">
-                            <img src="Images/IMG-0117.PNG" alt="">
+                        <div class="grid-item" data-src="Images/IMG-0116.PNG">
+                            <img src="Images/IMG-0116.PNG" alt="Chocolate con almendras acaramelizadas">
                         </div>
                     </div>
                 </div>
             </section>
             <!-- CONTACTO -->
-            <section id="Seccion4">
-                <h1>contacto</h1>
+            <section id="section4">
                 <div class="boxBottomTittle">
-                    <div class="datoscontacto">
+                    <div id="classContact">
                         <div class="direccion">
-                            <h2 id="telefono">teléfono</h2>
-                            <p>(011) 4123-4567</p>
-                            <h2>email</h2>
-                            <a href="mailto:avellinohelados@gmail.com">avellinohelados@gmail.com</a>
-                            <h2>dirección</h2>
-                            <p>Félix de Azara 852, Lomas de Zamora.</p>
-                            <p>Buenos Aires, ARG.</p>
-                        </div>                        
+                            <div class="classForm">
+                                <h1>consultas</h1>
+                                <form action="php/enviar.php" method="POST" autocomplete="off">
+                                    <div class="input">
+                                        <input type="text" required placeholder="Nombre (*)">
+                                        <input type="email" required placeholder="Email (*)">
+                                        <br><br>
+                                        <input type="text" name="Teléfono" placeholder="Teléfono">
+
+                                        <input type="text" required name="Localidad" placeholder="Localidad (*)">
+                                        <br><br>
+                                        <textarea name="mensaje" required id="mensaje" required="required"
+                                            placeholder="Mensaje (*)"></textarea>
+                                        <br><br>
+                                        <input type="submit" value="ENVIAR" id="enviar">
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="datosdirecc">
+                                <h1>contacto</h1>
+                                <h2 id="telefono">teléfono</h2>
+                                <p>(011) 4123-4567</p>
+                                <h2>email</h2>
+                                <a href="mailto:avellinohelados@gmail.com">avellinohelados@gmail.com</a>
+                                <h2>dirección</h2>
+                                <p>Félix de Azara 852, Lomas de Zamora.</p>
+                                <p>Buenos Aires, ARG.</p>
+                            </div>
+                        </div>
                         <div id="imagengooglemaps">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.235152869861!2d-58.40562648518994!3d-34.749668772741344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd29b0f2d839b%3A0xd20f81c921bb0983!2sAvellino%20helados!5e0!3m2!1ses!2sar!4v1603660551105!5m2!1ses!2sar"
                                 frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                                 tabindex="0"></iframe>
                         </div>
-                    </div>
-                    <div class="formulario">
-                        <h2>consultas</h2>
-                        <form action="php/enviar.php" method="POST" autocomplete="off">
-                            <div class="input">
-                                <input type="text" required placeholder="Nombre (*)">
-                                <input type="email" required placeholder="Email (*)">
-                                <br><br>
-                                <input type="text" name="Teléfono" placeholder="Teléfono">
-
-                                <input type="text" required name="Localidad" placeholder="Localidad (*)">
-                                <br><br>
-                                <textarea name="mensaje" required id="mensaje"
-                                    required="required" placeholder="Mensaje (*)"></textarea>
-                                <br><br>
-                                <input type="submit" value="ENVIAR" id="enviar">
-                            </div>
-                        </form>
                     </div>
                 </div>
             </section>
@@ -210,6 +212,21 @@
             <p>© 2021 | avellinohelados.com.ar | Todos los derechos reservados.</p>
         </footer>
     </div>
+    <!-- Jquery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <!-- LigthGallery Script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js"></script>
+    <!-- Lightgallery Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-thumbnail/1.2.1/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-fullscreen/1.2.1/lg-fullscreen.min.js"></script>
+    <!-- Call the plugin -->
+    <script type="text/javascript">
+        $('#gallery').lightGallery({
+            selector: '.grid-item'
+        });
+    </script>
 </body>
 
 </html>
