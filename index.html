@@ -8,6 +8,7 @@
 
     <!-- LightGallery -->
     <link type="text/css" rel="stylesheet" href="css/lightGallery.css" />
+    <link type="text/css" rel="stylesheet" href="css/fonts.css" />
 
     <!-- Fuente Google Fonts -->
     <style>
@@ -15,27 +16,19 @@
     </style>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.jpg">
+    <link rel="icon" type="image/png" href="/Avellino/Images/favicon.png">
 
-    <!-- Escritorios muy grandes -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
-    <!-- Tablets en horizontal y escritorios normales -->
-    <!--     <link rel="stylesheet" media="(max-width: 768px and max-width: 1199px)" href="CSS/styleDos.css" />
- -->
-    <!-- Móviles en horizontal o tables en vertical -->
-    <!--     <link rel="stylesheet" media="(max-width: 767px)" href="CSS/styleTres.css" />
- -->
-    <!-- Móviles en vertical -->
-    <!--     <link rel="stylesheet" media="(max-width: 480px)" href="CSS/styleCuatro.css" />
- -->
-
 </head>
 
 <body>
     <div id=general>
         <header>
             <div id="topHeader">
+                <!-- <a href="#section1" style="background-image: url(Images/imagen_logo.jpg);">pepe        
+                </a>  -->
+                <a href="#section1"><img src="Images/imagen_logo.jpg" alt="imagen del logo"></a>
             </div>
             <div id="bottomHeader">
                 <nav>
@@ -47,6 +40,7 @@
             </div>
         </header>
         <main>
+            <span class="ir-arriba icon-arrow-up2"></span>
             <!-- NOSOTROS -->
             <section id="section1">
                 <div id="aboutUs">
@@ -166,45 +160,39 @@
             </section>
             <!-- CONTACTO -->
             <section id="section4">
-                <div class="boxBottomTittle">
-                    <div id="classContact">
-                        <div class="direccion">
-                            <div class="classForm">
-                                <h1>consultas</h1>
-                                <form action="php/enviar.php" method="POST" autocomplete="off">
-                                    <div class="input">
-                                        <input type="text" required placeholder="Nombre (*)">
-                                        <input type="email" required placeholder="Email (*)">
-                                        <br><br>
-                                        <input type="text" name="Teléfono" placeholder="Teléfono">
+                <div class="direccion">
+                    <div class="classForm">
+                        <h1>consultas</h1>
+                        <form action="php/enviar.php" method="POST" autocomplete="off">
+                            <div class="input">
+                                <input type="text" required placeholder="Nombre (*)">
+                                <input type="email" required placeholder="Email (*)">
+                                <br><br>
+                                <input type="text" name="Teléfono" placeholder="Teléfono">
 
-                                        <input type="text" required name="Localidad" placeholder="Localidad (*)">
-                                        <br><br>
-                                        <textarea name="mensaje" required id="mensaje" required="required"
-                                            placeholder="Mensaje (*)"></textarea>
-                                        <br><br>
-                                        <input type="submit" value="ENVIAR" id="enviar">
-                                    </div>
-                                </form>
+                                <input type="text" required name="Localidad" placeholder="Localidad (*)">
+                                <br><br>
+                                <textarea name="mensaje" required id="mensaje" required="required"
+                                    placeholder="Mensaje (*)"></textarea>
+                                <input type="submit" value="ENVIAR" id="enviar">
                             </div>
-                            <div id="datosdirecc">
-                                <h1>contacto</h1>
-                                <h2 id="telefono">teléfono</h2>
-                                <p>(011) 4123-4567</p>
-                                <h2>email</h2>
-                                <a href="mailto:avellinohelados@gmail.com">avellinohelados@gmail.com</a>
-                                <h2>dirección</h2>
-                                <p>Félix de Azara 852, Lomas de Zamora.</p>
-                                <p>Buenos Aires, ARG.</p>
-                            </div>
-                        </div>
-                        <div id="imagengooglemaps">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.235152869861!2d-58.40562648518994!3d-34.749668772741344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd29b0f2d839b%3A0xd20f81c921bb0983!2sAvellino%20helados!5e0!3m2!1ses!2sar!4v1603660551105!5m2!1ses!2sar"
-                                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                                tabindex="0"></iframe>
-                        </div>
+                        </form>
                     </div>
+                    <div id="datosdirecc">
+                        <h1>contacto</h1>
+                        <h2 id="telefono">teléfono</h2>
+                        <p>(011) 4123-4567</p>
+                        <h2>email</h2>
+                        <a href="mailto:avellinohelados@gmail.com">avellinohelados@gmail.com</a>
+                        <h2>dirección</h2>
+                        <p>Félix de Azara 852, Lomas de Zamora.</p>
+                        <p>Buenos Aires, ARG.</p>
+                    </div>
+                </div>
+                <div id="imagengooglemaps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.235152869861!2d-58.40562648518994!3d-34.749668772741344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd29b0f2d839b%3A0xd20f81c921bb0983!2sAvellino%20helados!5e0!3m2!1ses!2sar!4v1603660551105!5m2!1ses!2sar"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </section>
         </main>
@@ -225,6 +213,26 @@
     <script type="text/javascript">
         $('#gallery').lightGallery({
             selector: '.grid-item'
+        });
+    </script>
+    <!-- Call the buttom to got home -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.ir-arriba').click(function () {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+
         });
     </script>
 </body>
